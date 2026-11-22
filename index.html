@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7efe2" />
+  <title>Vishnu Sahasranama Learning</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ŚRĪ VIṢṇU</p>
+        <h1>Vishnu Sahasranama</h1>
+      </div>
+      <button id="themeButton" class="icon-button" aria-label="Toggle theme">☾</button>
+    </header>
+
+    <section class="now-playing">
+      <div class="video-wrap"><div id="player"></div></div>
+      <div class="playing-copy">
+        <p id="sectionLabel" class="eyebrow">SECTION 1 OF 12</p>
+        <h2 id="nowTitle">Opening verses</h2>
+        <p id="nowText">Listen, repeat, and learn one section at a time.</p>
+        <div class="transport">
+          <button id="prevButton" class="icon-button" aria-label="Previous">←</button>
+          <button id="playButton" class="play-button" aria-label="Play">▶</button>
+          <button id="nextButton" class="icon-button" aria-label="Next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Playback controls">
+      <div>
+        <label for="speed">Playback speed</label>
+        <div class="speed-options" id="speedOptions">
+          <button data-speed="0.5">0.5×</button>
+          <button data-speed="0.75">0.75×</button>
+          <button data-speed="1" class="active">1×</button>
+          <button data-speed="1.25">1.25×</button>
+          <button data-speed="1.5">1.5×</button>
+        </div>
+      </div>
+      <label class="repeat-control"><input id="repeatToggle" type="checkbox" /> Repeat current section</label>
+    </section>
+
+    <section class="playlist-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">LEARNING LIST</p><h2>Sections</h2></div>
+        <span id="progressText">0 / 12 played</span>
+      </div>
+      <div id="slokaList" class="sloka-list"></div>
+    </section>
+  </main>
+
+  <footer><p>Source: <a href="https://www.youtube.com/watch?v=W2gNg8-XQRg" target="_blank" rel="noreferrer">Braja Beats — Sri Vishnu Sahasranama</a></p></footer>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="slokas.js?v=4"></script>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
