@@ -19,4 +19,4 @@ Open `http://localhost:4173`.
 - Optional repeat for the current section
 - Local progress tracking
 
-The source is embedded from YouTube. The 386 learning passages are machine-transcribed and time-aligned from this recording; transcription text should be reviewed against a reliable Sanskrit source before treating it as canonical verse text.
+The source is embedded from YouTube. The passage list is divided at detected visual scene changes in the recording, with one numbered passage per scene and approximate timestamps. The first five boundaries were checked against the video: 0:11, 0:23, 0:35, 0:47, and 0:59. The dedication/intro and closing subscribe card are excluded. Passage text is not transcribed yet; use the source video to read each verse.
